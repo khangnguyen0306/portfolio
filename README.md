@@ -18,7 +18,7 @@ Xin chào! Tôi là Nguyễn Trọng Khang, một Front-end developer nhiệt hu
 - Email: khangnguyen68318@gmail.com
 - LinkedIn: https://www.linkedin.com/in/nguyen-trong-khang-57b7292ba/
 - GitHub: https://github.com/khangnguyen0306
-- Portfolio: [Link portfolio]
+- Portfolio: https://portfolio-5gmt.vercel.app/
 
 ## 🌟 Mục Tiêu
 Tôi luôn hướng đến việc trở thành một Front-end Developer chuyên nghiệp và mong muốn đóng góp vào việc xây dựng những trải nghiệm web hiện đại, tối ưu và thân thiện với người dùng. Tôi khao khát được làm việc trong môi trường năng động, nơi tôi có thể không ngừng học hỏi và phát triển kỹ năng của mình.
