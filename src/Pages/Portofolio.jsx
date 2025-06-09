@@ -189,7 +189,7 @@ export default function FullWidthTabs() {
   };
 
   const displayedCertificates = showAllCertificates ? certificates : certificates.slice(0, initialItems);
-  console.log(displayedCertificates)
+  // console.log(displayedCertificates)
 
   return (
     <div className="md:px-[10%] px-[5%] w-full sm:mt-0 mt-[3rem] bg-[#030014] overflow-hidden" id="Portofolio">
@@ -310,12 +310,14 @@ export default function FullWidthTabs() {
               showAll={showAllProjects}
               initialItems={initialItems}
             />
-            <div className="mt-6 w-full flex justify-start">
+            {/* {projects.length > initialItems && ( */}
+            {/* <div className="mt-6 w-full flex justify-start">
               <ToggleButton
                 onClick={() => toggleShowMore('projects')}
                 isShowingMore={showAllProjects}
               />
-            </div>
+            </div> */}
+            {/* )} */}
           </TabPanel>
 
           <TabPanel value={value} index={1} dir={theme.direction}>

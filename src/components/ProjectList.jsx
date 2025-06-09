@@ -17,7 +17,7 @@ const ProjectList = ({ showAll, initialItems }) => {
                 }
                 const data = await response.json();
                 setProjects(data);
-                console.log(data);
+                // console.log(data);
             } catch (err) {
                 setError(err.message);
                 console.error('Error fetching projects:', err);
