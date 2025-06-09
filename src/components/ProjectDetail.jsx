@@ -99,10 +99,11 @@ const ProjectDetails = () => {
   const navigate = useNavigate();
   const [project, setProject] = useState(null);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
-
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     window.scrollTo(0, 0);
     const fetchProject = async () => {
+      setLoading(true);
       try {
         const response = await fetch(`https://67237059493fac3cf24ae02b.mockapi.io/portfolio/${id}/id/${id}`);
         const data = await response.json();
@@ -110,12 +111,14 @@ const ProjectDetails = () => {
         setProject(data);
       } catch (error) {
         console.error('Error fetching project:', error);
+      } finally {
+        setLoading(false);
       }
     };
     fetchProject();
   }, [id]);
 
-  if (!project) {
+  if (loading) {
     return (
       <div className="min-h-screen bg-[#030014] flex items-center justify-center">
         <div className="text-center space-y-6 animate-fadeIn">
